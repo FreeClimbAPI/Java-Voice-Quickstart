@@ -32,6 +32,13 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("junit:junit")
-    implementation 'com.github.PersephonyAPI:FreeClimb-Java-SDK:1.0.0'
+    implementation 'com.github.FreeClimbAPI:java-sdk:2.0.0'
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
