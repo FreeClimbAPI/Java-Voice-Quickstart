@@ -28,7 +28,7 @@ Tools:
 
 ## Setting up the Quickstart
 1. Make your local server publicly accessible
-    ```
+    ```bash
     ngrok http 80
     ```
     Once you run ngrok you should receive a response with a public URL, that looks something like 'https://92832de0.ngrok.io'. 
@@ -42,7 +42,7 @@ Tools:
 ## Running the Quickstart
 1. Start your voice quickstart application
 
-    ```
+    ```bash
     gradle build && java -Dserver.port=0080 -jar build/libs/Java-Getting-Started-Tutorial-3.0.6-plain.jar
     ```
 
