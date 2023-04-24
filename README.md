@@ -1,25 +1,52 @@
-# Java - Getting Started Tutorial
+# Java Voice Quickstart
 
-This project serves as a guide to help you build an application with FreeClimb. View this tutorial on [FreeClimb.com](https://docs.freeclimb.com/docs/java-voice-calling-quickstart). Specifically, the project will:
+This quickstart serves as a guide to get your first Voice application up and running with [FreeClimb](https://docs.freeclimb.com/docs/how-freeclimb-works).
 
-- Accept an incoming call and respond with a PerCL command   
+Specifically, the project will:
 
-## Setting up your new app within your FreeClimb account
+- Receive an incoming call via a FreeClimb application
+- Respond with a [PerCL](https://docs.freeclimb.com/reference/percl-overview) command to say 'Hello World!' to caller
 
-To get started using a FreeClimb account, follow the instructions [here](https://docs.freeclimb.com/docs/getting-started-with-freeclimb).
+## Tutorial
 
-## Setting up the Tutorial
+We offer a [Java Voice Quickstart Tutorial](https://docs.freeclimb.com/docs/java-voice-calling-quickstart) for more detailed set-up instructions and explanation of how FreeClimb works.
 
-1. Make sure you have Java 7 or later and Gradle 5.5 or later
+## Requirements
+A [FreeClimb account](https://www.freeclimb.com/dashboard/signup/)
 
-## Runnning the Tutorial
+A [registered application](https://docs.freeclimb.com/docs/registering-and-configuring-an-application#register-an-app) with a named alias
 
-1. Run the application using command:
+A [configured FreeClimb number](https://docs.freeclimb.com/docs/getting-and-configuring-a-freeclimb-number) assigned to your application
 
-   ```bash
-   $ gradle build && java -Dserver.port=3000 -jar build/libs/gs-spring-boot-0.1.0.jar
-   ```
+Trial accounts: a [verified number](https://docs.freeclimb.com/docs/using-your-trial-account#verifying-outbound-numbers)
 
-## Getting Help
+Tools:
+- [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html/) 8 or higher
+- [Gradle](https://gradle.org/install/) 5.5 or higher
+- [ngrok](https://ngrok.com/download) (recommended for hosting)
+- [Git](https://git-scm.com/)
 
-If you are experiencing difficulties, [contact support](https://freeclimb.com/support).
+## Setting up the Quickstart
+1. Make your local server publicly accessible
+    ```
+    ngrok http 80
+    ```
+    Once you run ngrok you should receive a response with a public URL, that looks something like 'https://92832de0.ngrok.io'. 
+
+2. [Configure your applications's endpoints](https://docs.freeclimb.com/docs/registering-and-configuring-an-application#configure-your-application) by adding a publicly accessible URL (we recommend an [ngrok](https://ngrok.com/download) URL) and the route reference `/incomingCall` to your App Config's VoiceURL:
+
+    ```bash
+    https://YOUR-URL.ngrok.io/incomingCall
+    ```
+    
+## Running the Quickstart
+1. Start your voice quickstart application
+
+    ```
+    gradle build && java -Dserver.port=0080 -jar build/libs/Java-Getting-Started-Tutorial-3.0.6-plain.jar
+    ```
+
+2. Call the FreeClimb number assigned to the application you've configured for this tutorial 
+
+## Feedback & Issues
+If you would like to give the team feedback or you encounter a problem, please [contact support](https://www.freeclimb.com/support/) or [submit a ticket](https://freeclimb.com/dashboard/portal/support) in the dashboard.
