@@ -8,7 +8,7 @@ import com.github.freeclimbapi.models.*;
 
 @RestController
 public class VoiceHelloWorld {
-  @RequestMapping("/voice")
+  @RequestMapping("/incomingCall")
   public String index() throws Exception {
     PerclScript script = new PerclScript();
     Say sayHelloWorld = new Say().text("Hello World!");
