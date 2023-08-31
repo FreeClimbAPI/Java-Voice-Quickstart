@@ -29,7 +29,7 @@ Tools:
 ## Setting up the Quickstart
 1. Make your local server publicly accessible
     ```bash
-    ngrok http 80
+    ngrok http 3000
     ```
     Once you run ngrok you should receive a response with a public URL, that looks something like 'https://92832de0.ngrok.io'. 
 
@@ -43,7 +43,7 @@ Tools:
 1. Start your voice quickstart application
 
     ```bash
-    gradle build && java -Dserver.port=0080 -jar build/libs/Java-Voice-Quickstart-3.0.6-plain.jar
+    gradle build && java -Dserver.port=3000 -jar build/libs/Java-Voice-Quickstart-3.0.6-plain.jar
     ```
 
 2. Call the FreeClimb number assigned to the application you've configured for this tutorial 
