@@ -43,7 +43,7 @@ Tools:
 1. Start your voice quickstart application
 
     ```bash
-    gradle build && java -Dserver.port=3000 -jar build/libs/Java-Voice-Quickstart-3.0.6-plain.jar
+    java -Dserver.port=3000 -jar build/libs/Java-Voice-Quickstart-3.0.6-plain.jar
     ```
 
 2. Call the FreeClimb number assigned to the application you've configured for this tutorial 
