@@ -31,19 +31,19 @@ Tools:
     ```bash
     ngrok http 3000
     ```
-    Once you run ngrok you should receive a response with a public URL, that looks something like 'https://92832de0.ngrok.io'. 
+    Once you run ngrok you should receive a response with a public URL, that looks something like 'https://ba1c-63-209-137-19.ngrok-free.app'. 
 
 2. [Configure your applications's endpoints](https://docs.freeclimb.com/docs/registering-and-configuring-an-application#configure-your-application) by adding a publicly accessible URL (we recommend an [ngrok](https://ngrok.com/download) URL) and the route reference `/incomingCall` to your App Config's VoiceURL:
 
     ```bash
-    https://YOUR-URL.ngrok.io/incomingCall
+    https://YOUR-URL.ngrok-free.app/incomingCall
     ```
     
 ## Running the Quickstart
 1. Start your voice quickstart application
 
     ```bash
-    gradle build && java -Dserver.port=3000 -jar build/libs/Java-Voice-Quickstart-3.0.6-plain.jar
+    gradle build && java -Dserver.port=3000 -jar build/libs/java-voice-quickstart-3.0.6.jar
     ```
 
 2. Call the FreeClimb number assigned to the application you've configured for this tutorial 
