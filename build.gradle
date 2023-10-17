@@ -19,7 +19,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'com.github.freeclimbapi:java-sdk:5.4.0'
+	implementation 'com.github.freeclimbapi:java-sdk:5.5.3'
 }
 
 tasks.named('test') {
