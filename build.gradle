@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.github.freeclimbapi'
-version = '3.0.6'
+//version = '3.0.6'
 
 java {
 	sourceCompatibility = '17'
