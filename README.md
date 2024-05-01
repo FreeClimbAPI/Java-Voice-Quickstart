@@ -43,10 +43,24 @@ Tools:
 1. Start your voice quickstart application
 
     ```bash
-    gradle build && java -Dserver.port=3000 -jar build/libs/java-voice-quickstart-3.0.6.jar
+    gradle build && java -Dserver.port=3000 -jar build/libs/java-voice-quickstart.jar
     ```
 
 2. Call the FreeClimb number assigned to the application you've configured for this tutorial 
+
+## Using Docker to Run the Quickstart
+
+1. Pull docker image from dockerhub
+
+   ```bash
+   docker pull freeclimbapi/java-voice-quickstart
+   ```
+
+2. Run docker image
+
+   ```bash
+   docker run -p 3000:3000 freeclimbapi/java-voice-quickstart
+   ```
 
 ## Feedback & Issues
 If you would like to give the team feedback or you encounter a problem, please [contact support](https://www.freeclimb.com/support/) or [submit a ticket](https://freeclimb.com/dashboard/portal/support) in the dashboard.
