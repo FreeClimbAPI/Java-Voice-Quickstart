@@ -10,7 +10,7 @@ public class VoiceHelloWorld {
   @RequestMapping("/incomingCall")
   public String index() throws Exception {
     PerclScript script = new PerclScript();
-    Say sayHelloWorld = new Say().text("Hello World!");
+    Say sayHelloWorld = new Say().text("Hello, World!");
     script.addCommand(sayHelloWorld);
 
     return script.toJson();
